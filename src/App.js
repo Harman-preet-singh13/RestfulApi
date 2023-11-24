@@ -1,13 +1,18 @@
 import UsingAxios from "./components/UsingAxios";
-import UsingFetch from "./components/UsingFetch";
 
+import { useState } from "react";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false)
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode)
+  };
 
   return (
-    <div className=" container mx-auto mb-10">
-      {/* <UsingFetch />   */}
-      <UsingAxios />
+    <div className={` ${darkMode && 'dark'}`}>
+      
+      <UsingAxios darkMode={darkMode} />
     </div>
   );
 }

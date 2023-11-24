@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body{
+    margin-inline: 2em;;
+}
+
+ .dark{
+    background-color: #0f172a;
+    color: white;
+    
+}
+
+.light{
+    background-color: white;
+    color: black;
+}
